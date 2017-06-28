@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_base_bottom_nav"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.mymusicapp.activity.base.BaseBottomNavActivity">
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+        <include layout="@layout/layout_bottom_nav"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_peekHeight="0dp">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@null"
+            android:id="@+id/ib_bottom"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_draw"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>

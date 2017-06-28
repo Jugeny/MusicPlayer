@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_near_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.mymusicapp.activity.NearFriendActivity">
+    <Button
+        android:onClick="startTest"
+        android:id="@+id/startTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到测试界面" />
+</LinearLayout>
